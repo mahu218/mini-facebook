@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="newsfeed.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   <!-- header starts -->
+<div class="header">
+  <div class="header__left">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png"
+      alt="Facebook Logo"
+    />
+    <div class="header__input">
+      <span class="material-icons"> search </span>
+      <input type="text" placeholder="Search Facebook" />
+    </div>
+  </div>
+
+  <div class="header__middle">
+    <div class="header__option active">
+      <span class="material-icons"> home </span>
+    </div>
+    <div class="header__option">
+      <span class="material-icons"> flag </span>
+    </div>
+    <div class="header__option">
+      <span class="material-icons"> subscriptions </span>
+    </div>
+    <div class="header__option">
+      <span class="material-icons"> storefront </span>
+    </div>
+    <div class="header__option">
+      <span class="material-icons"> supervised_user_circle </span>
+    </div>
+  </div>
+
+  <div class="header__right">
+    <div class="header__info">
+      <img
+        class="user__avatar"
+        src="307867407_2304100409753673_4473565605735040022_n.jpg"
+        alt="User"
+      />
+      <h4>Haseeb</h4>
+    </div>
+    <div class="header__icon">
+      <span class="material-icons">add</span>
+    </div>
+    <div class="header__icon">
+      <span class="material-icons">forum</span>
+    </div>
+    <div class="header__icon">
+      <span class="material-icons">notifications_active</span>
+    </div>
+    <div class="header__icon">
+      <span class="material-icons">expand_more</span>
+    </div>
+    <div class="header__icon" id="toggle-dark">
+  <span class="material-icons">dark_mode</span>
+</div>
+  </div>
+</div>
+<!-- header ends -->
+
+    <!-- main body starts -->
+    <div class="main__body">
+      <!-- sidebar starts -->
+      <div class="sidebar">
+        <div class="sidebarRow">
+          <img
+            class="user__avatar"
+            src="https://media.giphy.com/media/12HZukMBlutpoQ/giphy.gif"
+            alt="Cool Dog"
+            onerror="this.onerror=null;this.src='default-profile.png'"
+          />
+          <h4>Haseeeb ur Rehman</h4>
+        </div>
+
+        <div class="sidebarRow">
+          <span class="material-icons" style="color: #1877F2; font-size: 36px;">coronavirus</span>
+          <h4>Covid - 19 Information Center</h4>
+        </div>
+
+        <div class="sidebarRow">
+          <span class="material-icons"> emoji_flags </span>
+          <h4>Pages</h4>
+        </div>
+
+        <div class="sidebarRow">
+          <span class="material-icons"> people </span>
+          <h4>People</h4>
+        </div>
+
+        <div class="sidebarRow">
+          <span class="material-icons"> chat </span>
+          <h4>Messenger</h4>
+        </div>
+
+        <div class="sidebarRow">
+          <span class="material-icons"> storefront </span>
+          <h4>Marketplace</h4>
+        </div>
+
+        <div class="sidebarRow">
+          <span class="material-icons"> video_library </span>
+          <h4>Videos</h4>
+        </div>
+
+        <div class="sidebarRow">
+          <span class="material-icons"> expand_more </span>
+          <h4>More</h4>
+        </div>
+      </div>
+      <!-- sidebar ends -->
+
+      <!-- feed starts -->
+      <div class="feed">
+        <div class="storyReel">
+
+          <!-- story starts -->
+          <div>
+          <a href="haseeb.html" class="story" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');">
+            <img
+              class="user__avatar story__avatar"
+              src="https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif	"
+              alt="Haseeb"
+            />
+            <h4>Haseeb</h4>
+            </a>
+          </div>
+          <!-- story ends -->
+           
+          <!-- story starts -->
+          <div>
+          <a href="talha.html" class="story" style="background-image: url('https://placebear.com/400/300');">
+  <img
+    class="user__avatar story__avatar"
+    src="https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif"
+    alt="Talha"
+  />
+  <h4>Talha</h4>
+</a>
+          </div>
+          <!-- story ends -->
+
+          <!-- story starts -->
+          <div>
+          <a href="jutt.html" class="story" style="background-image: url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80');">
+          <img class="story__avatar" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Jutt" 
+          />
+          <h4>Jutt</h4>
+          </a>
+          </div>
+          <!-- story ends -->
+        </div>
+      
+        <!-- message sender starts -->
+        <div class="messageSender">
+          <div class="messageSender__top">
+            <img
+              class="user__avatar"
+              src="https://media.giphy.com/media/12HZukMBlutpoQ/giphy.gif"
+              alt="Your Profile Picture"
+            />
+            <form>
+              <input class="messageSender__input"
+               placeholder="What's on your mind?" 
+               type="text" />
+            </form>
+          </div>
+
+          <div class="messageSender__bottom">
+            <div class="messageSender__option">
+              <span style="color: #f02849" class="material-icons"> video_call </span>
+              <h3>Live-Video</h3>
+            </div>
+
+            <div class="messageSender__option">
+              <span style="color: #45bd62" class="material-icons"> image </span>
+              <h3>Photo/Video</h3>
+            </div>
+
+            <div class="messageSender__option">
+              <span style="color: #f7b928" class="material-icons"> sentiment_satisfied_alt </span>
+              <h3>Feeling/Activity</h3>
+            </div>
+          </div>
+        </div>
+        <!-- message sender ends -->
+
+        <!-- post starts -->
+        <div class="post">
+          <div class="post__top">
+            <img
+              class="user__avatar post__avatar"
+              src="307867407_2304100409753673_4473565605735040022_n.jpg "
+              alt="Cute Cat"
+            />
+            <div class="post__topInfo">
+              <h3>Haseeb</h3>
+              <p>01 Dec at 20:30</p>
+            </div>
+          </div>
+
+          <div class="post__bottom">
+            <p>Honda 125 2022 model</p>
+          </div>
+
+          <div class="post__image">
+            <img
+              src="308731223_1172992930322679_2048499909632721565_n.j"
+              alt=""
+            />
+          </div>
+
+          <div class="post__options">
+            <div class="post__option">
+              <span class="material-icons">emoji_emotions</span>
+              <p>React</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons">mode_comment</span>
+              <p>Comment</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons">ios_share</span>
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <!-- post ends -->
+
+        <!-- post starts -->
+        <div class="post">
+          <div class="post__top">
+            <img
+              class="user__avatar post__avatar"
+              src="307867407_2304100409753673_4473565605735040022_n.jpg "
+              alt="Cute Cat"
+            />
+            <div class="post__topInfo">
+              <h3>Haseeb</h3>
+              <p>01 Dec at 20:30</p>
+            </div>
+          </div>
+
+          <div class="post__bottom">
+            <p>Hello World</p>
+          </div>
+
+          <div class="post__options">
+            <div class="post__option">
+              <span class="material-icons"> emoji_emotions </span>
+              <p>React</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> mode_comment </span>
+              <p>Comment</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons"> ios_share </span>
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <!-- post ends -->
+
+        <!-- post starts -->
+        <div class="post">
+          <div class="post__top">
+            <img
+              class="user__avatar post__avatar"
+              src="307867407_2304100409753673_4473565605735040022_n.jpg "
+              alt="Cute Cat"
+            />
+            <div class="post__topInfo">
+              <h3>Haseeb</h3>
+              <p>01 Dec at 20:30</p>
+            </div>
+          </div>
+
+          <div class="post__bottom">
+            <p>NewYork City</p>
+          </div>
+
+          <div class="post__image">
+            <img src="images.jpg" alt="" />
+          </div>
+
+          <div class="post__options">
+            <div class="post__option">
+              <span class="material-icons"> emoji_emotions </span>
+              <p>Like</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons">mode_comment </span>
+              <p>Comment</p>
+            </div>
+
+            <div class="post__option">
+              <span class="material-icons">ios_share</span>
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <!-- post ends -->
+      </div>
+      <!-- feed ends -->
+
+      <div style="flex: 0.33" class="widgets">
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/facebook"
+          data-tabs="timeline"
+          data-width="500"
+          data-height="1000"
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true"
+        >
+          <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/facebook">Facebook</a>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <!-- main body ends -->
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0"
+      nonce="zUxEq08J"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+  const toggleButton = document.getElementById("toggle-dark");
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+  </body>
+</html>
